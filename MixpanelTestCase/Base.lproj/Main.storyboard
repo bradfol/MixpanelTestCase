@@ -47,10 +47,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Experiment View Controller-->
         <scene sceneID="bre-cT-Qwc">
             <objects>
-                <viewController id="sDW-8x-pHa" sceneMemberID="viewController">
+                <viewController id="sDW-8x-pHa" customClass="ExperimentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CfV-yh-MXA"/>
                         <viewControllerLayoutGuide type="bottom" id="R8n-v6-yNH"/>
@@ -58,7 +58,22 @@
                     <view key="view" contentMode="scaleToFill" id="Kfo-hZ-ryw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdk-Mr-hLY">
+                                <rect key="frame" x="16" y="28" width="40" height="30"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeAction" destination="sDW-8x-pHa" eventType="touchUpInside" id="ko1-N9-MUd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qdk-Mr-hLY" firstAttribute="leading" secondItem="Kfo-hZ-ryw" secondAttribute="leading" constant="16" id="UPU-zT-Ipb"/>
+                            <constraint firstItem="qdk-Mr-hLY" firstAttribute="top" secondItem="CfV-yh-MXA" secondAttribute="bottom" constant="8" id="sS5-pE-wuk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOz-bT-CER" userLabel="First Responder" sceneMemberID="firstResponder"/>

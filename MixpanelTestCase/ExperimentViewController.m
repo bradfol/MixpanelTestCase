@@ -19,4 +19,8 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)closeAction {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
