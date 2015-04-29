@@ -80,11 +80,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weQ-Z9-GEZ">
+                                <rect key="frame" x="202" y="234" width="196" height="30"/>
+                                <state key="normal" title="Successful conversion event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="successfulConversionAction" destination="sDW-8x-pHa" eventType="touchUpInside" id="0sd-ee-HFV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="lpo-6y-fb8" secondAttribute="centerX" id="7R6-l8-qMg"/>
+                            <constraint firstAttribute="centerX" secondItem="weQ-Z9-GEZ" secondAttribute="centerX" id="Mgt-bV-lPF"/>
                             <constraint firstItem="lpo-6y-fb8" firstAttribute="top" secondItem="jTC-MM-WDT" secondAttribute="bottom" constant="8" id="RlF-BM-tNH"/>
+                            <constraint firstItem="weQ-Z9-GEZ" firstAttribute="top" secondItem="lpo-6y-fb8" secondAttribute="bottom" constant="66" id="SVH-9e-uLc"/>
                             <constraint firstItem="qdk-Mr-hLY" firstAttribute="leading" secondItem="Kfo-hZ-ryw" secondAttribute="leading" constant="16" id="UPU-zT-Ipb"/>
                             <constraint firstAttribute="centerX" secondItem="jTC-MM-WDT" secondAttribute="centerX" id="nwR-Ew-OYe"/>
                             <constraint firstItem="jTC-MM-WDT" firstAttribute="top" secondItem="CfV-yh-MXA" secondAttribute="bottom" constant="98" id="s7f-hX-OnW"/>

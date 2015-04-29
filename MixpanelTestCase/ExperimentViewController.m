@@ -21,6 +21,10 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)successfulConversionAction {
+    [[Mixpanel sharedInstance] track:@"Successful conversion"];
+}
+
 - (IBAction)closeAction {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
