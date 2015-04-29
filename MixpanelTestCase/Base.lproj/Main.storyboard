@@ -68,13 +68,32 @@
                                     <action selector="closeAction" destination="sDW-8x-pHa" eventType="touchUpInside" id="ko1-N9-MUd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Variant number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTC-MM-WDT">
+                                <rect key="frame" x="240" y="118" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpo-6y-fb8">
+                                <rect key="frame" x="255" y="147" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lpo-6y-fb8" secondAttribute="centerX" id="7R6-l8-qMg"/>
+                            <constraint firstItem="lpo-6y-fb8" firstAttribute="top" secondItem="jTC-MM-WDT" secondAttribute="bottom" constant="8" id="RlF-BM-tNH"/>
                             <constraint firstItem="qdk-Mr-hLY" firstAttribute="leading" secondItem="Kfo-hZ-ryw" secondAttribute="leading" constant="16" id="UPU-zT-Ipb"/>
+                            <constraint firstAttribute="centerX" secondItem="jTC-MM-WDT" secondAttribute="centerX" id="nwR-Ew-OYe"/>
+                            <constraint firstItem="jTC-MM-WDT" firstAttribute="top" secondItem="CfV-yh-MXA" secondAttribute="bottom" constant="98" id="s7f-hX-OnW"/>
                             <constraint firstItem="qdk-Mr-hLY" firstAttribute="top" secondItem="CfV-yh-MXA" secondAttribute="bottom" constant="8" id="sS5-pE-wuk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="lpo-6y-fb8" id="iwX-5i-Y4Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOz-bT-CER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
