@@ -7,6 +7,8 @@
 //
 
 #import "ExperimentViewController.h"
+#import <Mixpanel.h>
+#import <Mixpanel/MPTweakInline.h>
 
 @interface ExperimentViewController ()
 
@@ -19,6 +21,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setVariant:MPTweakValue(@"Variant number", 0)];
+}
+
+- (void)setVariant:(int)i {
+    NSString *string;
+    switch (i) {
+        case 0:
+            string = @"zero";
+            break;
+        case 1:
+            string = @"one";
+            break;
+        case 2:
+            string = @"two";
+            break;
+    }
+    self.label.text = string;
 }
 
 - (IBAction)successfulConversionAction {
