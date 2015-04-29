@@ -19,7 +19,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func resetMixpanel() {
+        let mixpanel = Mixpanel.sharedInstance()
+        mixpanel.reset()
+        mixpanel.identify(NSUUID().UUIDString)
+        mixpanel.joinExperimentsWithCallback {
+            let alert = UIAlertView(title: "Experiment Reset Complete", message: nil, delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
+    }
 
 }
 
