@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Mixpanel.sharedInstanceWithToken("771387debf8c4f6b50501b6b70b74e57")
+        
         return true
     }
 
